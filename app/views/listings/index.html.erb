@@ -12,6 +12,7 @@
           <div class="caption">
             <h3><%= listing.name %></h3>
             <p><%= number_to_currency(listing.price) %></p>
+            <p><%= "Sold by #{listing.user.name}" %></p>
           </div>
         </div>
       </div>
@@ -19,4 +20,6 @@
   </div>
 </div>
 
-<%= link_to "New Listing", new_listing_path, class: "btn btn-primary", data: { no_turbolink: true } %>
+<% if user_signed_in? %>
+  <%= link_to "New Listing", new_listing_path, class: "btn btn-primary", data: { no_turbolink: true } %>
+<% end %>
