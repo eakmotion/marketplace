@@ -35,6 +35,8 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'spring'
+  gem 'better_errors'
+  gem 'byebug'
 end
 
 group :doc do
