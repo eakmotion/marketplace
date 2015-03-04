@@ -27,6 +27,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '~> 3.3.3'
+gem 'paperclip', '~> 4.2'
+gem 'paperclip-dropbox', '>= 1.1.7'
+gem 'figaro'
+gem 'devise'
+gem 'stripe'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
